@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>K.DIVYAPRIYA - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Playfair Display', serif;
+      background: linear-gradient(135deg, #e0f7fa, #f1f8e9);
+      color: #2e2e2e;
+      font-style: italic;
+      padding: 0;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #0288d1;
+      display: flex;
+      justify-content: center;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 12px 20px;
+      margin: 0 5px;
+      font-weight: bold;
+      border-radius: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    .navbar a:hover {
+      background-color: #0277bd;
+    }
+
+    .header {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: rgba(255, 255, 255, 0.7);
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      margin: 30px;
+      position: relative;
+    }
+
+    .header::after {
+      content: "";
+      width: 60px;
+      height: 3px;
+      background-color: #4CAF50;
+      display: block;
+      margin: 15px auto 0;
+      border-radius: 2px;
+    }
+
+    .header h1 {
+      font-size: 2.8em;
+      color: #333;
+    }
+
+    .header small {
+      font-size: 1.2em;
+      color: #666;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .section {
+      background: white;
+      padding: 25px;
+      margin-bottom: 25px;
+      border-left: 5px solid #4CAF50;
+      border-radius: 10px;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .section:hover {
+      transform: scale(1.01);
+    }
+
+    .section h2 {
+      font-size: 1.8em;
+      margin-bottom: 10px;
+      color: #388E3C;
+      border-bottom: 2px dashed #c8e6c9;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    ul li {
+      padding: 6px 0;
+    }
+
+    .button-group {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    a.button {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      margin: 10px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    a.button:hover {
+      background-color: #2e7d32;
+      transform: scale(1.05);
+    }
+
+    .contact a {
+      color: #1a237e;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .header h1 {
+        font-size: 2em;
+      }
+
+      .section {
+        padding: 20px;
+      }
+
+      .section h2 {
+        font-size: 1.5em;
+      }
+
+      .navbar {
+        flex-wrap: wrap;
+      }
+
+      .navbar a {
+        padding: 10px;
+        margin: 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+  <a href="#about">About Me</a>
+  <a href="#projects">Projects</a>
+  <a href="#skills">Skills</a>
+  <a href="#contact">Contact</a>
+  <a href="#work">Visit My Work</a>
+</div>
+
+<div class="header">
+  <h1>K.DIVYAPRIYA</h1>
+  <small>BCA Graduate | Front-End Developer</small>
+</div>
+
+<div class="container">
+  <div id="about" class="section">
+    <h2>About Me</h2>
+    <p>Hello! I'm Divya Priya.K, a dedicated front-end web developer and a student of II BCA B. I specialize in building visually appealing, clean-coded websites and user interfaces. I'm passionate about clean code, design systems, and learning new tools in the web development space.</p>
+  </div>
+
+  <div id="projects" class="section">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Java vs Python Game</strong> – A small game comparing Java and Python logic.</li>
+      <li><strong>Blog Platform</strong> – A full-stack blog platform with user authentication and a rich text editor.</li>
+    </ul>
+  </div>
+
+  <div id="skills" class="section">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML & CSS</li>
+      <li>JavaScript</li>
+      <li>Python</li>
+      <li>Java</li>
+      <li>C++</li>
+      <li>Data Structures</li>
+    </ul>
+  </div>
+
+  <div id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:13661bca2024@princescience.in">13661bca2024@princescience.in</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/divyapriya" target="_blank">linkedin.com/in/divyapriya</a></p>
+    <p>GitHub: <a href="https://github.com/kdivyapriya25" target="_blank">github.com/kdivyapriya25</a></p>
+  </div>
+
+  <div id="work" class="button-group">
+    <a class="button" href="Screenshot_2025-03-23-20-26-08-285_com.miui.gallery.jpg" download>Download CV</a>
+    <a class="button" href="https://github.com/kdivyapriya25" target="_blank">GitHub</a>
+    <a class="button" href="https://linkedin.com/in/divyapriya" target="_blank">LinkedIn</a>
+  </div>
+</div>
+
+</body>
+</html>
